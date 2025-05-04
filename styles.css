@@ -1,0 +1,142 @@
+/* Basic Reset and Body Styling */
+body {
+    font-family: 'Georgia', serif; /* A classic, slightly rustic font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f8f8; /* Light grey background for a clean look */
+    color: #333; /* Dark grey for text */
+    display: flex; /* Use flexbox for potential centering/layout later */
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Heading Styles */
+  h1, h2 {
+    font-family: 'Montserrat', sans-serif; /* A modern, slightly more prominent font for headings */
+    color: #a03d3d; /* A warm, inviting reddish-brown */
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-top: 30px;
+    border-bottom: 2px solid #a03d3d; /* Underline for the main title */
+    padding-bottom: 10px;
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    margin-top: 25px;
+  }
+  
+  /* Paragraphs */
+  p {
+    text-align: justify;
+    margin-bottom: 20px;
+    max-width: 800px; /* Limit paragraph width for readability */
+  }
+  
+  /* Horizontal Rule */
+  hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd; /* Light grey line */
+    margin: 20px 0;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  /* Image Styling */
+  img {
+    display: block; /* Center the image */
+    margin: 0 auto 20px;
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto;
+    border-radius: 8px; /* Slightly rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* List Styling */
+  ul, ol {
+    margin-bottom: 20px;
+    max-width: 800px;
+    padding-left: 20px; /* Indent lists */
+  }
+  
+  ul li {
+    margin-bottom: 8px;
+  }
+  
+  ol li {
+    margin-bottom: 8px;
+  }
+  
+  ol ol {
+    margin-top: 8px;
+    margin-bottom: 0;
+    padding-left: 15px; /* Indent nested ordered lists */
+  }
+  
+  /* Link Styling (Home link) */
+  a {
+    color: #a03d3d;
+    text-decoration: none; /* No underline by default */
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: inline-block; /* Allow margin-bottom to work */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  a:hover {
+    color: #7a2f2f; /* Darker color on hover */
+    text-decoration: underline; /* Underline on hover for clarity */
+  }
+  
+  /* Optional: Container for content to limit width on large screens */
+  .container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto; /* Center the container */
+  }
+  
+  /* Add the container div around your existing content in the HTML to use this */
+  /*
+  <div class="container">
+    <a href="../index.html">Home</a>
+    <h1>Spaghetti Carbonara</h1>
+    <hr>
+    ... rest of your content ...
+  </div>
+  */
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2em;
+    }
+  
+    h2 {
+      font-size: 1.5em;
+    }
+  
+    body {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.8em;
+    }
+  
+    h2 {
+      font-size: 1.3em;
+    }
+  
+    body {
+      padding: 10px;
+    }
+  }
+  
